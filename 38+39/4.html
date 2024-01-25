@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      transition: background-color 0.5s ease-in-out;
+
+    }
+
+    #jokeContainer {
+      text-align: center;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    p{
+        color:rgb(82, 82, 167);
+    }
+    div{
+        border-radius: 10px;
+        background-color: #f0f0f0;
+        width: 100vh;
+
+        height:35vh;
+    }
+    .color-click{
+        border-radius: 10px;
+        background-color: rgb(83, 0, 166);
+        color:#f0f0f0;
+    }
+  </style>
+  <title>Don't Laugh Challenge</title>
+</head>
+<body id="body" style="background-color: #0004ff;">
+
+<div id="jokeContainer">
+  <p>Don't Laugh Challenge</p>
+  <h2 id="joke">Ever wondered why bees hum? It's <br> because they don't know the words</h2>
+  <button class="color-click" onclick="getAnotherJoke()">Get Another Joke</button>
+</div>
+
+<script src="./4.js"></script>
+
+</body>
+</html>

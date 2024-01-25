@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      
+    }
+
+    #searchContainer {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      transition: width 0.3s ease-in-out;
+    }
+
+    #searchIcon {
+      font-size: 24px;
+      color: #34495e;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #searchInput {
+      width: 0;
+      padding: 10px;
+      outline: none;
+      font-size: 16px;
+      box-sizing: border-box;
+      opacity: 0;
+      transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+    .Vien{
+        border: 10px solid blue;
+    }
+  </style>
+  <title>Search Bar Animation</title>
+</head>
+<body>
+<div id="searchContainer" onclick="toggleSearch()">
+  <div class="Vien" id="searchIcon">&#128269;</div>
+  <input class="Vien" type="text" id="searchInput" placeholder="Search...">
+</div>
+<script src="./2.js"></script>
+</body>
+</html>

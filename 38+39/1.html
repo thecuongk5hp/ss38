@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        
+      font-family: Arial, sans-serif;
+    }
+    .steps {
+      display: flex;
+      align-items: center;
+    }
+    .step {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #ccc;
+      text-align: center;
+      line-height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-right: 5px;
+      border: 3px solid blue;
+    }    
+    .step.active {
+        background-color: #00ff62;
+        color: #ffffff;
+    }
+    .gap {
+      width: 10px;
+      height: 2px;
+      background-color: #ccc;
+      margin: 0 5px;
+    }
+    button {
+      margin-top: 20px;    
+    }
+    p{
+        padding-left: 50px;
+    }
+  </style>
+  <title>Multi-step Form</title>
+</head>
+<body>
+<div class="steps" id="stepContainer">
+  <div class="step active" onclick="goToStep(1)">1</div>
+  <div class="gap"></div>
+  <div class="step" onclick="goToStep(2)">2</div>
+  <div class="gap"></div>
+  <div class="step" onclick="goToStep(3)">3</div>
+  <div class="gap"></div>
+  <div class="step" onclick="goToStep(4)">4</div>
+</div>
+<p>
+    <button id="prevBtn" onclick="prevStep()" disabled>Previous</button>
+    <button id="nextBtn" onclick="nextStep()">Next</button>
+</p>
+<script src="./1.js"></script>
+
+</body>
+</html>
